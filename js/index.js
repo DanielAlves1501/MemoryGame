@@ -122,6 +122,12 @@ shuffledCards.forEach(card => {
  segundos = 0;
  minutos = 0;
  timer.innerHTML = '0s'
+ totalMovesMetric.innerHTML = 0;
+ rightGuess.innerHTML = 0;
+
+ memoryCards.forEach(card =>{
+    card.classList.add('card-cover');
+ })
 });
 
 })
