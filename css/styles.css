@@ -16,11 +16,12 @@ main{
     height: 100vh;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.table, .score-table{
+.table{
     background: rgba(255, 255, 255, .3);
     padding: 20px;
 }
@@ -67,11 +68,11 @@ main{
 /* Score Table */
 
 .score-table{
+    padding: 20px;
     width: 300px;
-    padding-left: 30px;
     position: absolute;
     top:0;
-    right: 0;
+    left: 0;
 
 }
 
@@ -80,7 +81,7 @@ main{
 .wrong-bg{
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 0, 0, 0.9);
+    background: rgba(219, 13, 13, 0.8);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -93,6 +94,7 @@ main{
 
 .wrong-bg--show{
     opacity: 1;
+    pointer-events: visible;
 }
 
 .wrong-bg p{
@@ -100,6 +102,27 @@ main{
     font-weight: bold;
 }
 
+/* Controls */
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.start-game-btn{
+    background: rgb(26, 189, 26);
+}
+
+.restart-game-btn{
+    background: rgb(243, 188, 7);
+}
 
 /* MEDIA QUERIES */
 
